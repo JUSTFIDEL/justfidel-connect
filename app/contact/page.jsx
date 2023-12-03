@@ -1,4 +1,4 @@
-import SendMessages from '@components/sendMessage'
+import SendMessages from '@components/SendMessages'
 import React from 'react'
 
 export const metadata = {
