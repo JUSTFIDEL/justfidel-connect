@@ -10,7 +10,7 @@ import { faClose, faBars } from '@fortawesome/free-solid-svg-icons'
 const Nav = () => {
 	const [toggleDropdown, setToggleDropdown] = useState(false)
 	return (
-		<nav className='z-[1000] flex-between w-full mb-8 pt-2 md:mb-16 fixed top-0 left-4 right-4 bg-[#f0f0f0] md:left-12 md:right-12 '>
+		<nav className='z-[1000] flex-between w-full mb-8 px-4 py-2 md:py-8 md:mb-16 fixed top-0 left-0 right-0 md:px-16 bg-[#f0f0f0] '>
 			<Link href='/' className='flex gap-2 flex-center'>
 				<Image
 					src='/assets/images/jf.png'
@@ -24,7 +24,7 @@ const Nav = () => {
 
 			{/* Desktop Navigation */}
 			<div className='sm:flex hidden'>
-				<div className='flex gap-3 md:gap-7 md:mr-12'>
+				<div className='flex gap-3 md:gap-7'>
 					<Link href='/about' className='nav_text uppercase text-gray-700'>
 						About
 					</Link>

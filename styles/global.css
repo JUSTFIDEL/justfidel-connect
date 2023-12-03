@@ -79,7 +79,7 @@ body {
 /* Tailwind Styles */
 
 .app {
-	@apply min-h-full pt-[75px] relative z-10 flex flex-col justify-between items-center max-w-7xl mx-auto sm:px-16 px-4;
+	@apply min-h-full pt-[90px] md:pt-[100px] relative z-10 flex flex-col justify-between items-center max-w-7xl mx-auto sm:px-16 px-4;
 }
 
 .black_btn {
@@ -154,7 +154,7 @@ body {
 }
 
 .dropdown_link {
-	@apply text-lg font-inter text-gray-700 hover:text-gray-500 font-medium mr-[4rem];
+	@apply text-lg font-inter text-gray-700 hover:text-gray-500 font-medium mr-[2rem];
 }
 
 /* PromptCard Component */
@@ -185,15 +185,15 @@ body {
 .hamburger_open {
 	font-size: 1.5rem;
 	margin-top: 8px;
-	margin-right: 1.5rem;
+	margin-right: 0;
 	width: 32px;
 	height: 32px;
 }
 
 .hamburger_close {
 	font-size: 1.5rem;
-	margin-top: 9px;
-	margin-right: 2.85rem;
+	margin-top: 11px;
+	margin-right: 20px;
 	width: 32px;
 	height: 32px;
 }
