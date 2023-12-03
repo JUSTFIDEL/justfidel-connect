@@ -10,7 +10,7 @@ import { faClose, faBars } from '@fortawesome/free-solid-svg-icons'
 const Nav = () => {
 	const [toggleDropdown, setToggleDropdown] = useState(false)
 	return (
-		<nav className='flex-between w-full mb-16 pt-3'>
+		<nav className='z-[1000] flex-between w-full mb-8 pt-2 md:mb-16 fixed top-0 left-4 right-4 bg-[#f0f0f0] md:left-12 md:right-12 '>
 			<Link href='/' className='flex gap-2 flex-center'>
 				<Image
 					src='/assets/images/jf.png'
@@ -24,20 +24,20 @@ const Nav = () => {
 
 			{/* Desktop Navigation */}
 			<div className='sm:flex hidden'>
-				<div className='flex gap-3 md:gap-5'>
-					<Link href='/about' className='nav_text uppercase'>
+				<div className='flex gap-3 md:gap-7 md:mr-12'>
+					<Link href='/about' className='nav_text uppercase text-gray-700'>
 						About
 					</Link>
 
-					<Link href='/design' className='nav_text uppercase'>
+					<Link href='/design' className='nav_text uppercase text-gray-700'>
 						Design
 					</Link>
 
-					<Link href='/social' className='nav_text uppercase'>
+					<Link href='/social' className='nav_text uppercase text-gray-700'>
 						Social
 					</Link>
 
-					<Link href='/contact' className='nav_text uppercase'>
+					<Link href='/contact' className='nav_text uppercase text-gray-700'>
 						Contact Us
 					</Link>
 				</div>
@@ -46,24 +46,13 @@ const Nav = () => {
 			{/* Mobile Navigation */}
 			<div className='sm:hidden flex relative'>
 				<div className='flex'>
-					{/* <Image
-						src='/assets/icons/menu.svg'
-						width={37}
-						height={37}
-						alt='menu'
-						className='cursor-pointer'
-						onClick={() => {
-							setToggleDropdown(prev => !prev)
-						}}
-					/> */}
-
 					<button
-						className='cursor-pointer text-xs m-3 hamburger_open'
+						className='cursor-pointer text-xs m-3 hamburger_open '
 						onClick={() => {
 							setToggleDropdown(prev => !prev)
 						}}
 					>
-						<FontAwesomeIcon icon={faBars} />
+						<FontAwesomeIcon icon={faBars} className='text-gray-700' />
 					</button>
 
 					{toggleDropdown && (
@@ -74,12 +63,12 @@ const Nav = () => {
 									setToggleDropdown(prev => !prev)
 								}}
 							>
-								<FontAwesomeIcon icon={faClose} />
+								<FontAwesomeIcon icon={faClose} className='text-gray-700' />
 							</button>
 
 							<Link
 								href='/about'
-								className='nav_text uppercase dropdown_link'
+								className='nav_text uppercase dropdown_link text-gray-700'
 								onClick={() => {
 									setToggleDropdown(prev => !prev)
 								}}
@@ -89,7 +78,7 @@ const Nav = () => {
 
 							<Link
 								href='/design'
-								className='nav_text uppercase dropdown_link'
+								className='nav_text uppercase dropdown_link text-gray-700'
 								onClick={() => {
 									setToggleDropdown(prev => !prev)
 								}}
@@ -99,7 +88,7 @@ const Nav = () => {
 
 							<Link
 								href='/social'
-								className='nav_text uppercase dropdown_link'
+								className='nav_text uppercase dropdown_link text-gray-700'
 								onClick={() => {
 									setToggleDropdown(prev => !prev)
 								}}
@@ -109,7 +98,7 @@ const Nav = () => {
 
 							<Link
 								href='/contact'
-								className='nav_text uppercase dropdown_link'
+								className='nav_text uppercase dropdown_link text-gray-700'
 								onClick={() => {
 									setToggleDropdown(prev => !prev)
 								}}

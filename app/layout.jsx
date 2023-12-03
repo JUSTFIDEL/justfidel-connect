@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from 'react-toastify'
 
 export const metadata = {
-	title: 'JustFidel',
+	title: 'Home | Welcome to JustFidel',
 	description: 'Build your Personal and Business Website',
 }
 

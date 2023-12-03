@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 	return (
-		<section className='w-full max-w-full flex flex-col'>
-			<h1 className='head_form text-left'>
-				<span className='green_gradient'>{type} Us</span>
+		<section className='w-full max-w-full flex flex-col justify-between pt-0 mt-0'>
+			<h1 className='head_form text-left pt-0 mt-0'>
+				<span className='green_gradient mt-0 pt-0'>{type} Us</span>
 			</h1>
 
 			<p className='desc text-left max-w-md'>
@@ -13,7 +13,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
 			<form
 				onSubmit={handleSubmit}
-				className='mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism'
+				className='mt-5 w-full max-w-2xl flex flex-col gap-7 glassmorphism'
 			>
 				<label>
 					<span className='font-satoshi font-semibold text-base text-gray-700'>
