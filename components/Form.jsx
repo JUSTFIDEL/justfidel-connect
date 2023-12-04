@@ -4,11 +4,11 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 	return (
 		<section className='w-full max-w-full flex flex-col justify-between pt-0 mt-0'>
 			<h1 className='head_form text-left pt-0 mt-0'>
-				<span className='green_gradient mt-0 pt-0'>{type} Us</span>
+				<span className='green_gradient mt-0 pt-0'>Message Us</span>
 			</h1>
 
 			<p className='desc text-left max-w-md'>
-				Send us a {type} and we will get in touch as soon as possible.
+				Send us a message and we will get in touch as soon as possible.
 			</p>
 
 			<form
@@ -67,7 +67,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 						disabled={submitting}
 						className='px-5 py-1.5 text-sm bg-primary-green rounded-full text-white'
 					>
-						{submitting ? `${type}...` : type}
+						{submitting ? `${type}ing...` : type}
 					</button>
 				</div>
 			</form>

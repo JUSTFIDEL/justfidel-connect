@@ -52,7 +52,7 @@ const SendMessages = () => {
 
 	return (
 		<Form
-			type='Message'
+			type='Send'
 			post={post}
 			setPost={setPost}
 			submitting={submitting}

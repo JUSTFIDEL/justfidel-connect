@@ -79,7 +79,7 @@ body {
 /* Tailwind Styles */
 
 .app {
-	@apply min-h-full pt-[90px] md:pt-[100px] relative z-10 flex flex-col justify-between items-center max-w-7xl mx-auto sm:px-16 px-4;
+	@apply min-h-full pt-[90px] md:pt-[120px] relative z-10 flex flex-col justify-between items-center max-w-7xl mx-auto sm:px-16 px-4;
 }
 
 .black_btn {
